@@ -13,7 +13,7 @@ select * from sakila.film where title regexp 'APOLLO$';
 select * from sakila.film order by length desc limit 10;
 
 -- Q5 How many films include Behind the Scenes content?
-select * from sakila.film 
+select (*) from sakila.film 
 where special_features regexp 'Behind the Scenes';
 
 -- Q6 Drop column picture from staff.
